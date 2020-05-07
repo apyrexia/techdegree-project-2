@@ -61,8 +61,8 @@ function pageLinks(list) {
       pageDiv.appendChild(paginationDiv);
    const ul = document.createElement('ul');
       paginationDiv.appendChild(ul);
-   
-   for (let i = 1; i < list.length / itemsDisplayed; i++) {
+   const pagesNum = Math.ceil(list.length / itemsDisplayed);
+   for (let i = 1; i <= pagesNum; i++) {
       const li = document.createElement('li');
       ul.appendChild(li);
       const a = document.createElement('a');
