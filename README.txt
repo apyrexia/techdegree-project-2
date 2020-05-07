@@ -1,0 +1,1 @@
+An app that dynamically paginates a list of students.
